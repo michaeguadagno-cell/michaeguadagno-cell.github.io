@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Pick a topic. Tap a big button. Find deals on money, tech, home, travel, and more. Free and easy."
+    />
+    <meta name="theme-color" content="#120a24" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="DealDoor — Pick a topic. Tap a button. Done." />
+    <meta
+      property="og:description"
+      content="Free and easy. Pick a box. Tap the big button. See deals."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DealDoor — Just pick a box" />
+    <meta
+      name="twitter:description"
+      content="Free deals by topic. Super simple. Big buttons."
+    />
+    <title>DealDoor — Pick a topic. Tap a button. Done.</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Floating “start here” for mobile thumbs -->
+    <a class="jump-fab" href="#topics">Pick a topic ↓</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="logo" href="#top" aria-label="Deal Door home">
+          <span class="logo__mark" aria-hidden="true">🔥</span>
+          <span class="logo__text">Deal<span>Door</span></span>
+        </a>
+        <nav class="nav" aria-label="Main menu">
+          <a href="#how">How it works</a>
+          <a href="#topics">Topics</a>
+          <a href="#hot">Hot pick</a>
+          <a class="nav__cta" href="#topics">Start</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO — big, loud, simple -->
+      <section class="hero">
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="container hero__inner">
+          <p class="hero__badge">✨ Free · Fast · Super easy</p>
+          <h1 class="hero__title">
+            Want a good deal?<br />
+            <span class="hero__title-accent">Just pick a box.</span>
+          </h1>
+          <p class="hero__lead">
+            No hard words. No long forms.<br />
+            Tap a topic → hit the big button → you’re in.
+          </p>
+
+          <div class="steps" aria-label="3 easy steps">
+            <div class="step">
+              <span class="step__num">1</span>
+              <span class="step__text">Pick a topic</span>
+            </div>
+            <div class="step__arrow" aria-hidden="true">→</div>
+            <div class="step">
+              <span class="step__num">2</span>
+              <span class="step__text">Tap the big button</span>
+            </div>
+            <div class="step__arrow" aria-hidden="true">→</div>
+            <div class="step">
+              <span class="step__num">3</span>
+              <span class="step__text">See the deals</span>
+            </div>
+          </div>
+
+          <div class="hero__actions">
+            <a class="btn btn--mega" href="#topics">Show me the topics →</a>
+          </div>
+
+          <p class="hero__hint">👇 Scroll down · or tap the button</p>
+        </div>
+      </section>
+
+      <!-- Ad slot — simple label for visitors -->
+      <div class="container">
+        <div
+          class="ad-slot ad-slot--banner"
+          data-ad-slot="leaderboard-top"
+          data-monetization="cpc"
+          role="complementary"
+          aria-label="Ad space"
+        >
+          <div class="ad-slot__label">Sponsored</div>
+          <p class="ad-slot__title">Ad space</p>
+          <p class="ad-slot__note">Tap to try · real ads go here later</p>
+        </div>
+      </div>
+
+      <!-- HOW — tiny and visual -->
+      <section class="section section--how" id="how">
+        <div class="container">
+          <h2 class="section__title">How this works</h2>
+          <p class="section__sub">3 steps. That’s it.</p>
+          <div class="how-simple">
+            <article class="how-simple__card">
+              <div class="how-simple__emoji" aria-hidden="true">👀</div>
+              <h3>Look</h3>
+              <p>See the colored boxes below.</p>
+            </article>
+            <article class="how-simple__card">
+              <div class="how-simple__emoji" aria-hidden="true">👆</div>
+              <h3>Tap</h3>
+              <p>Hit the big button on a box you like.</p>
+            </article>
+            <article class="how-simple__card">
+              <div class="how-simple__emoji" aria-hidden="true">🎉</div>
+              <h3>Go</h3>
+              <p>A new page opens with deals for you.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- TOPICS — main action -->
+      <section class="section section--topics" id="topics" aria-labelledby="topics-heading">
+        <div class="container">
+          <div class="section__header section__header--center">
+            <h2 id="topics-heading" class="section__title">Pick what you want</h2>
+            <p class="section__sub">One tap. New page. Easy.</p>
+          </div>
+
+          <!-- Quick jump chips for scanners -->
+          <div class="topic-chips" id="topic-chips" aria-label="Jump to a topic">
+            <!-- filled by app.js -->
+          </div>
+
+          <div id="niche-grid" class="niche-grid" data-region="niche-grid">
+            <!-- Filled by js/app.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Side ad -->
+      <div class="container">
+        <div
+          class="ad-slot ad-slot--wide"
+          data-ad-slot="hero-sidebar"
+          data-monetization="cpc"
+          role="complementary"
+          aria-label="Ad space"
+        >
+          <div class="ad-slot__label">Sponsored</div>
+          <p class="ad-slot__title">Another ad space</p>
+          <p class="ad-slot__note">Tap to try · real ads go here later</p>
+        </div>
+      </div>
+
+      <!-- HOT + EMAIL -->
+      <section class="section" id="hot" aria-labelledby="hot-heading">
+        <div class="container mono-grid">
+          <div
+            id="featured-partner"
+            class="panel panel--hot"
+            data-monetization="sponsored"
+            data-region="featured-partner"
+          >
+            <!-- Filled by app.js -->
+          </div>
+
+          <div class="panel panel--lead" id="lead" data-monetization="lead" data-region="lead-capture">
+            <h2 id="lead-headline" class="panel__title">Want free deal alerts?</h2>
+            <p id="lead-subhead" class="panel__sub"></p>
+            <form id="lead-form" class="lead-form" novalidate>
+              <label class="sr-only" for="lead-email">Your email</label>
+              <input
+                id="lead-email"
+                name="email"
+                type="email"
+                required
+                placeholder="your@email.com"
+                autocomplete="email"
+                inputmode="email"
+              />
+              <button id="lead-submit" class="btn btn--mega btn--block" type="submit">
+                Send me deals
+              </button>
+              <p id="lead-privacy" class="tiny"></p>
+              <p id="lead-status" hidden></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRUST strip -->
+      <section class="trust">
+        <div class="container trust__inner">
+          <div class="trust__item"><span aria-hidden="true">✓</span> Free to use</div>
+          <div class="trust__item"><span aria-hidden="true">✓</span> Big easy buttons</div>
+          <div class="trust__item"><span aria-hidden="true">✓</span> Opens in a new tab</div>
+          <div class="trust__item"><span aria-hidden="true">✓</span> No account needed</div>
+        </div>
+      </section>
+
+      <!-- FAQ — simple words -->
+      <section class="section section--faq" id="faq" aria-labelledby="faq-heading">
+        <div class="container">
+          <h2 id="faq-heading" class="section__title section__title--center">Questions?</h2>
+          <p class="section__sub section__sub--center">Short answers.</p>
+          <div class="faq-list">
+            <details class="faq-item" open>
+              <summary>Is this free?</summary>
+              <p>Yes. You can look and tap for free.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Do I need an account?</summary>
+              <p>No. Just pick a topic and tap the big button.</p>
+            </details>
+            <details class="faq-item">
+              <summary>What happens when I tap a button?</summary>
+              <p>A new page opens with shops or deals for that topic.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Is this hard?</summary>
+              <p>No. Look → tap → go. Three steps.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Why do some links say “sponsored”?</summary>
+              <p>
+                This site may earn a small fee if you buy something. You do not pay extra.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Share this page -->
+      <section class="section section--share" id="share">
+        <div class="container">
+          <div class="share-card">
+            <h2 class="section__title">Like this page?</h2>
+            <p class="section__sub">Send it to a friend. Free.</p>
+            <p class="share-card__text" id="share-message">
+              Free deal page — pick a topic, tap a button:
+              https://raw.githack.com/michaeguadagno-cell/niche-money-hub/main/index.html
+            </p>
+            <div class="share-card__actions">
+              <button type="button" class="btn btn--mega" id="copy-share-btn">
+                Copy link
+              </button>
+              <a
+                class="btn btn--ghost"
+                id="share-sms"
+                href="sms:?&body=Free%20deal%20page%20%E2%80%94%20pick%20a%20topic%2C%20tap%20a%20button%3A%20https%3A%2F%2Fraw.githack.com%2Fmichaeguadagno-cell%2Fniche-money-hub%2Fmain%2Findex.html"
+              >Text a friend</a>
+            </div>
+            <p class="tiny" id="copy-status" hidden>Link copied!</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Operator tools — collapsed, not visitor-facing -->
+      <section class="section section--owner" id="owner">
+        <div class="container">
+          <details class="owner-box">
+            <summary>Site owner tools (you can ignore this)</summary>
+            <div class="operator-bar">
+              <div>
+                Clicks logged: <span id="click-count">0</span>
+              </div>
+              <button type="button" class="btn btn--ghost" id="toggle-clicks">
+                Show clicks
+              </button>
+            </div>
+            <div id="operator-clicks" class="panel" hidden></div>
+            <p class="tiny disclosure">
+              Some links may pay this site a small fee if you buy — at no extra cost to you.
+              Not money or medical advice. Owner: put real affiliate tags in <code>js/niches.js</code>.
+              See <code>FREE-CHECKLIST.md</code> and <code>START-HERE.md</code>.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="footer__brand">DealDoor</p>
+        <p class="tiny">Pick a topic. Tap a button. Find deals.</p>
+        <p class="tiny footer__links">
+          <a href="#topics">Topics</a> ·
+          <a href="#faq">FAQ</a> ·
+          <a href="#share">Share</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/affiliate.js"></script>
+    <script src="js/click-store.js"></script>
+    <script src="js/niches.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
