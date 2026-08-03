@@ -162,7 +162,7 @@ test('createClickEvent defaults kind and uses numeric timestamp', function () {
 test('appendClickEvent is pure and caps length', function () {
   var original = [{ destination: 'a', label: 'A', kind: 'outbound', timestamp: 1 }];
   var next = appendClickEvent(original, createClickEvent('b', 'B', 'ad-slot', 2), 2);
-  assert.strictEqual(original.length, 1);
+  assert.strictEqual(original.length, 1); // not mutated
   assert.strictEqual(next.length, 2);
   assert.strictEqual(next[1].destination, 'b');
 
@@ -172,7 +172,7 @@ test('appendClickEvent is pure and caps length', function () {
   assert.strictEqual(capped[1].destination, 'c');
 });
 
-// --- createClickStore ---
+// --- createClickStore (real store + pure helpers) ---
 test('createClickStore records clicks with destination + label via shipped helpers', function () {
   var memory = {};
   var storage = {
@@ -225,6 +225,7 @@ test('createClickStore records ad-slot clicks', function () {
   assert.ok(all[0].destination.indexOf('leaderboard-top') !== -1);
 });
 
+// --- niches data structural checks (shipped data module) ---
 test('niches data has major niches with primary CTA baseUrls', function () {
   var niches = require(path.join(root, 'js', 'niches.js'));
   assert.ok(Array.isArray(niches.NICHES));
@@ -251,9 +252,12 @@ test('niches data has major niches with primary CTA baseUrls', function () {
       assert.strictEqual(u.searchParams.get('ref'), niches.DEFAULT_AFFILIATE.ref);
     }
   });
+  // Health guide page ships with offers data
   var healthOffers = require(path.join(root, 'js', 'health-offers.js'));
   assert.ok(healthOffers.HEALTH_OFFERS.stacks.items.length >= 3);
   assert.ok(healthOffers.HEALTH_OFFERS.isometrics.items.length >= 1);
+  var techOffers = require(path.join(root, 'js', 'tech-offers.js'));
+  assert.ok(techOffers.TECH_OFFERS.picks.length >= 5);
   var featured = resolveOutboundUrl(
     niches.FEATURED_PARTNER.baseUrl,
     niches.DEFAULT_AFFILIATE,

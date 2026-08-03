@@ -206,7 +206,7 @@
     var btn = document.getElementById('lead-submit');
     var note = document.getElementById('lead-privacy');
     if (h) h.textContent = LEAD_CAPTURE.headline;
-    if (s) s.textContent = LEAD_CAPTURE.subhead;
+    if (s) s.textContent = LEAD_CAPTURE.privacyNote;
     if (btn) btn.textContent = LEAD_CAPTURE.buttonLabel;
     if (note) note.textContent = LEAD_CAPTURE.privacyNote;
 
