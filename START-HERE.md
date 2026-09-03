@@ -1,77 +1,27 @@
-# START HERE
+# You have ONE project
 
-## Your live affiliate page (open this)
+**DealDoor** — a simple deal page. Do not start a new site.
 
-**https://michaeguadagno-cell.github.io/tech.html**
+- Live hub: https://michaeguadagno-cell.github.io/
+- **Live money (already tracking):** https://michaeguadagno-cell.github.io/code.html
+- Crypto tax (already tracking): https://michaeguadagno-cell.github.io/crypto-tax.html
+- HubSpot (unpaid until your link): https://michaeguadagno-cell.github.io/hubspot.html
+- On this PC: `C:\Users\13475\niche-money-hub` → double-click `OPEN-SITE.bat`
 
-Budget tech picks + shop buttons (affiliate-ready). Real HTML, not code.
+## What already pays (no wait)
 
-**Hub:** https://michaeguadagno-cell.github.io/  
-**Health:** /health.html · **Checklist:** /checklist.html  
+1. **OpenCode** — `https://opencode.ai/go?ref=P09GVJ0ANH` is live on `code.html`.
+2. **Koinly** — `via=62C62C62` is live on `crypto-tax.html`.
 
-Full detail: **`LIVE.md`**
+Pay still needs **people visiting**. Text those two URLs to 5 people you trust.
 
-**On this PC:** `OPEN-SITE.bat` → http://127.0.0.1:8787/tech.html
+## HubSpot (still waiting)
 
-### Paste real Amazon ID (when approved)
+1. Join HubSpot affiliates (free): https://www.hubspot.com/partners/affiliates
+2. After approval, say: `set my hubspot link to PASTE_THE_LINK`
 
-`js/niches.js` → `amazonTag: 'yoursite-20'`
+Until that link is in, HubSpot visitors do not pay you.
 
----
+## After that (not now)
 
-## What was finished while you were gone
-
-| Done | What it is |
-|------|------------|
-| `AGENTS.md` | Rules so every AI keeps the page simple |
-| Skills on Grok | See below — type the slash commands anytime |
-| This file | Your short return checklist |
-| FAQ + Share | On the page: Copy link / Text a friend |
-| `FREE-CHECKLIST.md` | Free steps toward money |
-| `HOW-TO-SHARE.md` | Ready text to send people |
-| `robots.txt` + sitemap | Ready for search later |
-
-### New Grok skills (free teaching)
-
-| Type this | Does this |
-|-----------|-----------|
-| `/dealdoor-style` | Rebuild pages with simple words + big buttons |
-| `/teach-me` | Turn a paste/transcript into a lasting skill |
-| `/free-stack` | Free-tools-only advice (no paid upsells) |
-
-**How to teach Grok later (like Hermes /learn):**  
-Paste a transcript or notes and say:  
-`/teach-me make a skill called ____ from this`
-
----
-
-## What still needs *you* (not done automatically)
-
-1. **GitHub Pages one click** (optional permanent URL):  
-   https://github.com/michaeguadagno-cell/niche-money-hub/settings/pages  
-   Source → **GitHub Actions** → re-run workflow  
-
-2. **Amazon Associates** (when ready):  
-   Apply free → put your tag in `js/niches.js` as `amazonTag: 'yoursite-20'`
-
-3. **Traffic** — people have to visit. Free: share the raw.githack link with people you trust first.
-
----
-
-## Do *not* open these (they show code, not the page)
-
-- github.com/…/blob/…/index.html  
-- raw.githubusercontent.com/…  
-
----
-
-## One next message when you’re back
-
-Pick any:
-
-- `show me the site is live`  
-- `/teach-me` + paste something you want saved  
-- `set my amazon tag to ____` (when you have one)  
-- `make the page even simpler`  
-
-You’re doing fine. The site and the free teaching setup are ready.
+Amazon, extra pages, and new sites wait. DealDoor is the only product.

@@ -1,30 +1,26 @@
-# LIVE — HubSpot affiliate page (not Amazon)
+# LIVE — DealDoor money pages
 
-## Canonical URL
+## Canonical URLs
 
-**https://michaeguadagno-cell.github.io/hubspot.html**
+- Hub: https://michaeguadagno-cell.github.io/
+- **AI coder (pays now):** https://michaeguadagno-cell.github.io/code.html
+- **Crypto tax (pays now):** https://michaeguadagno-cell.github.io/crypto-tax.html
+- HubSpot guide: https://michaeguadagno-cell.github.io/hubspot.html
 
-Also: hub https://michaeguadagno-cell.github.io/
+## Paying links in the site
 
-## Paste your HubSpot affiliate link (one place)
+| Offer | Status | Tracking |
+| --- | --- | --- |
+| OpenCode | **Live** | `ref=P09GVJ0ANH` |
+| Koinly | **Live** | `via=62C62C62` |
+| HubSpot | Unpaid stub | wait for Impact link |
+| Amazon / Booking | Placeholders | do not share as “pays you” |
 
-1. Free join: https://www.hubspot.com/partners/affiliates  
-2. After approval, copy **your** link from the dashboard  
-3. Edit **`js/hubspot-config.js`**:
+## HubSpot (optional extra)
 
-```js
-affiliateUrl: 'PASTE_YOUR_HUBSPOT_AFFILIATE_LINK_HERE',
-```
+Hub ID **247251204** is the CRM, not the paying link.
 
-4. Push/redeploy  
+1. Apply: https://www.hubspot.com/partners/affiliates
+2. After approval, tell Grok: `set my hubspot link to PASTE_THE_LINK`
 
-## Surfaces on the page
-
-1. HubSpot CTAs (`data-hubspot` / affiliate)  
-2. CPC ad slot  
-3. Email lead shell  
-4. Share / copy  
-
-## Amazon?
-
-Not required for this page. Tech page still uses Amazon-style tags if you want that later.
+Amazon is later. Do not start a new site.
