@@ -99,12 +99,12 @@ var NICHES = [
 ];
 
 var FEATURED_PARTNER = {
-  title: 'This one already pays',
-  name: 'Free AI coder (OpenCode)',
+  title: 'Start here',
+  name: 'Free AI coder',
   pitch: 'Tap. Try the free AI coding helper.',
   baseUrl: 'code.html',
   ctaLabel: 'Open the AI coder guide \u2192',
-  badge: 'Live money link',
+  badge: 'Hot pick',
   network: 'internal'
 };
 
