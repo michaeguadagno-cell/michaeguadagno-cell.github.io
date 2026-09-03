@@ -29,7 +29,7 @@ var NICHES = [
         name: 'Try OpenCode',
         baseUrl: 'https://opencode.ai/go?ref=P09GVJ0ANH',
         blurb: 'Free AI coder',
-        network: 'direct'
+        network: 'internal'
       }
     ]
   },
@@ -50,7 +50,7 @@ var NICHES = [
         name: 'Try Koinly',
         baseUrl: 'https://koinly.io/?via=62C62C62&utm_source=dealdoor&utm_medium=affiliate&utm_campaign=crypto-tax',
         blurb: 'Start a tax report',
-        network: 'direct'
+        network: 'internal'
       }
     ]
   },
