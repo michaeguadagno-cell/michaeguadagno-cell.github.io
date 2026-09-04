@@ -19,7 +19,10 @@ var NICHES = [
     pitch: 'A free AI helper that writes code with you.',
     color: '#22d3ee',
     primaryCta: { label: 'Open free AI coder \u2192', baseUrl: 'code.html', partner: 'OpenCode', network: 'internal' },
-    partners: [{ name: 'Try OpenCode', baseUrl: 'https://opencode.ai/go?ref=P09GVJ0ANH', blurb: 'Free AI coder', network: 'internal' }]
+    partners: [
+      { name: 'Try OpenCode', baseUrl: 'https://opencode.ai/go?ref=P09GVJ0ANH', blurb: 'Free AI coder', network: 'internal' },
+      { name: 'Stuck on a bug?', baseUrl: 'fix-code.html', blurb: 'Paste the error', network: 'internal' }
+    ]
   },
   {
     id: 'crypto',
