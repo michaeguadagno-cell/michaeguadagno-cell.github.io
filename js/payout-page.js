@@ -1,6 +1,6 @@
 /**
  * Shared wiring for money guide pages (code.html, crypto-tax.html).
- * Buttons use data-payout="opencode" | "koinly".
+ * Buttons use data-payout="opencode" | "koinly" | "coinledger".
  */
 (function () {
   'use strict';
